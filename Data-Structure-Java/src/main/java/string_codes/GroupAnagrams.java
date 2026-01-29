@@ -18,7 +18,7 @@ public class GroupAnagrams {
             // for counting freq of english lowercase letters
             int[] freq = new int[26];
 
-            // char array - for converting string to charcters
+            // char array - for converting string to characters
             char[] ch = s.toCharArray();
 
             // for calculating the freq of characters
@@ -39,7 +39,7 @@ public class GroupAnagrams {
             String keys = keyBuilder.toString();
 
             // If key is not present then create a new Arraylist and add the string
-            map.computeIfAbsent(keys, k -> new ArrayList<>()).add(s);
+            map.computeIfAbsent(keys,k -> new ArrayList<>()).add(s);
 
         }
         return new ArrayList<>(map.values());
